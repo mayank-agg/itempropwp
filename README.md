@@ -1,13 +1,13 @@
 # itemprop WP for SERP/SEO Rich snippets
 
-Add human invisible schema.org itemprop code to post content
+Add human invisible schema.org itemprop code to post content. 
 
 * [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=Z4ALL9WUMY3CL&lc=LV&item_name=Umbrovskis%2e%20WordPress%20plugins&item_number=002&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) or promote this work 
 * License URI: http://simplemediacode.com/license/gpl/
 
 ## Description
 
-Very simple WordPress plugin, that uses built in function to filter element attributes. It will add human invisible / search engine visible schema.org `itemprop` code to content (via META tags).
+A simple WordPress plugin, that uses built in function to filter element attributes. This plug-in will add human invisible / search engine visible schema.org `itemprop` code to content (via META tags).
 
 ### Example:
 
@@ -54,22 +54,22 @@ Review
 
 ### How does it work?
 
-This asumes that Your page is not fully integrated with HTML5's data properties for microdata. This plugin will create small code inside Your `full content`, with extra microdata from schema.org. This will be ONLY on singular pages - post, page or your custom post type.
+The plug-in assumes that the page is not fully integrated with HTML5's data properties for microdata and creates small code inside `full content`, with extra microdata from schema.org. This will be ONLY on singular pages - post, page or your custom post type.
 
 Once we are on singular page:
 
 * NEW in 3.3.0 itemprop="review".
-* we will extract from it EXCERPT.
-* If You haven't provided excerpt, plugin will look-up for post content, and downsize it to 170 symbols up to full word.
-* If your content consist ONLY of shortcode, it will strip it out, and leave empty content. :(
-* If we have empty content, from previous step, we will use post title. Not best choise, but at least we have some `description`.
-* If Your post do not have even title, plugin will giveup and your description will be ampty. (This ir very bad :') )
+* Page will be extracted from excerpt. 
+* If excerpt is not provided, plugin will look-up for post content, and downsize it to 170 symbols up to full word.
+* If content consists only of shortcode, plug-in will strip it out, and leave empty content.
+* If there is empty content from previous step, post title will be used. Not a best choice, but at least there is a 'description'.
+* If there is no title on the post, plugin will make the description empty.
 
-Other options, like `datePublished`, `UserComments`, `url` are taken from post
+Other options, like `datePublished`, `UserComments`, `url` are taken from post. 
 
 ### Features
 
-* Admin interface for options: description lenght (if excerpt not provided),show/hide UserComments:325,  show/hide dateModified 
+* Admin interface for options: description length (if excerpt not provided),show/hide UserComments:325,  show/hide dateModified 
 * itemprop="description" (since 3.1.1)
 * itemprop="name" (since 3.0)
 * itemprop="url" (since 3.0)
